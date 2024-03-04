@@ -1,0 +1,31 @@
+.NavLink{
+    text-decoration: none;
+    color: grey;
+    background-color: black;
+    position: relative;
+    top: 35px;
+    left: 350px;
+}
+.NavLink:hover {
+    color: white;
+    transition: all 0.2s;
+ }
+.NavLink:before {
+content: "";
+height: 2px;
+width: 100%;
+position: absolute;
+bottom: -3px;
+transform: scaleX(0);
+transition: all 0.2s linear;
+background-color: white;
+}
+.NavLink:hover:before {
+transform: scaleX(1);
+
+}
+.NavBar{
+    width: 800px;
+    height: 100px;
+    background-color: black;
+}
